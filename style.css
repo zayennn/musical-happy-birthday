@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
 body {
   height: 100vh;
   background-image: radial-gradient(#374566, #010203);
@@ -7,11 +8,13 @@ body {
   letter-spacing: 0.15em;
   font-size: 20px;
 }
+
 canvas {
   position: absolute;
   z-index: -1;
   top: 0;
 }
+
 #wishes {
   width: 20em;
   margin: calc(50vh - 6.7em) auto;
@@ -19,12 +22,15 @@ canvas {
   text-align: center;
   background: hsla(210, 50%, 15%, 0.75);
 }
+
 span {
   display: inline-block;
 }
+
 span.jump {
   animation: jump 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s 2 alternate;
 }
+
 @keyframes jump {
   to {
     transform: translateY(-0.7em);
@@ -41,6 +47,7 @@ span.jump {
   top: calc(50vh - 12.5em);
   animation: jump 1s ease-in-out infinite alternate;
 }
+
 #pleaseClick span {
   font-size: 200%;
 }
