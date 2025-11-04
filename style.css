@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+body {
+  height: 100vh;
+  background-image: radial-gradient(#374566, #010203);
+  color: #ccc;
+  font-family: Raleway;
+  letter-spacing: 0.15em;
+  font-size: 20px;
+}
+canvas {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+#wishes {
+  width: 20em;
+  margin: calc(50vh - 6.7em) auto;
+  border: 1px dotted;
+  text-align: center;
+  background: hsla(210, 50%, 15%, 0.75);
+}
+span {
+  display: inline-block;
+}
+span.jump {
+  animation: jump 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s 2 alternate;
+}
+@keyframes jump {
+  to {
+    transform: translateY(-0.7em);
+  }
+}
+
+#pleaseClick {
+  position: absolute;
+  background: hsla(210, 50%, 15%, 0.75);
+  font-size: 80%;
+  width: 10em;
+  text-align: center;
+  left: calc(50vw - 5em);
+  top: calc(50vh - 12.5em);
+  animation: jump 1s ease-in-out infinite alternate;
+}
+#pleaseClick span {
+  font-size: 200%;
+}
+
+.control {
+  text-align: center;
+}
+
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18em;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #777;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #374566;
+  border-radius: 50%;
+  margin-top: -9px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: #777;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+input[type="range"]::-ms-thumb {
+  background-color: #777;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type="range"]::-ms-track {
+  background-color: #777;
+  height: 3px;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background-color: HotPink;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background-color: black;
+}
