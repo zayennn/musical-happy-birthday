@@ -31,7 +31,6 @@ const notes = [
   {f:349,d:2,t:"You",p:p4},
 ];
 
-//DOM
 notes.map((n) => createSpan(n));
 
 function createSpan(n){
