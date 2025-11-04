@@ -85,7 +85,6 @@ for(let i=0; i < notes.length; i++){
 }
 
 
-// EVENTS
 wishes.addEventListener("click",function(e){
   if(e.target.id != "inputSpeed" && !flag){
   sounds[0].play();
