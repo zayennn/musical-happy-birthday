@@ -116,7 +116,7 @@ class Particle{
     this.y = Math.random() * ch;
     this.r = 15 + ~~(Math.random() * 20);
     this.l = 3 + ~~(Math.random() * 2);
-    this.a = 2*Math.PI/this.l;// angle between polygon vertices
+    this.a = 2*Math.PI/this.l;
     this.rot = Math.random()*Math.PI;// polygon rotation
     this.speed = .05 + Math.random()/2;
     this.rotSpeed = 0.005 + Math.random()*.005;
