@@ -39,7 +39,6 @@ function createSpan(n){
   n.p.appendChild(n.sp);
 }
 
-// SOUND
 let speed = inputSpeed.value;
 let flag = false;
 let sounds = [];
