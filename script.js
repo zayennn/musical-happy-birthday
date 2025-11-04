@@ -117,7 +117,7 @@ class Particle{
     this.r = 15 + ~~(Math.random() * 20);
     this.l = 3 + ~~(Math.random() * 2);
     this.a = 2*Math.PI/this.l;
-    this.rot = Math.random()*Math.PI;// polygon rotation
+    this.rot = Math.random()*Math.PI;
     this.speed = .05 + Math.random()/2;
     this.rotSpeed = 0.005 + Math.random()*.005;
     this.color = colors[~~(Math.random() * colors.length)];
