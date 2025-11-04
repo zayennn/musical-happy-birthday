@@ -159,7 +159,6 @@ particles.push(p)
 
 function Draw() {
 requestId = window.requestAnimationFrame(Draw);
-//ctx.globalAlpha=0.65;
 ctx.clearRect(0,0,cw,ch);
 particles.map((p) => {
   p.rot += p.rotSpeed;
