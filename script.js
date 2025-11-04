@@ -99,7 +99,6 @@ inputSpeed.addEventListener("input",function(e){
   });
 },false);
 
-// CANVAS
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 let cw = canvas.width = window.innerWidth,
